@@ -1,0 +1,33 @@
+{
+  "name": "multi-page-react",
+  "version": "1.0.0",
+  "description": "测试webpack打包多页面应用",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --devtool eval --progress --colors --profile --config config/webpack/webpack.dev.conf.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zhangrh",
+  "license": "ISC",
+  "dependencies": {
+    "braces": "^2.3.2",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhangrunhao/multi-page-react.git"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-react-hmre": "^1.1.1",
+    "opn": "^5.4.0",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1",
+    "webpack-merge": "^4.2.1"
+  }
+}

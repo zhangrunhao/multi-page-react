@@ -1,0 +1,9 @@
+// TODO: 查看babelrc具体属性含义
+{
+  "presets": ["react", "env"],
+  "env": {
+    "development": {
+      "presets": ["react-hmre"] // 用来开启热更新
+    }
+  }
+}
