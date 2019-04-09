@@ -35,12 +35,17 @@ let config = merge(baseWebpackConfig, {
       exclude: [
         path.resolve(__dirname, "../../node_modules")
       ],
+    }, {
+      test: /\.(css|pcss)$/,
+      // loader: 'style-loader?sourceMap!css-loader?souceMap!postcss-loader?sourceMap',
+      loader: 'style-loader?sourceMap!css-loader?sourceMap!postcss-loader?sourceMap',
+      exclude: /node_modules/,
     }]
   },
   /*设置api转发*/
   devServer: {
     host: '0.0.0.0',
-    port: 8080,
+    port: 1111,
     hot: true,
     inline: true,
     contentBase: path.resolve(webpackFile.devDirectory),
