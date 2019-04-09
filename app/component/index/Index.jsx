@@ -29,6 +29,7 @@ class Index extends React.Component {
     return (
       <div className="cont">
         <div className="top">
+        <div className="bg"></div>
           这是首页: 
         </div>
         <div className="bottom">
