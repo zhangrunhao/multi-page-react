@@ -26,6 +26,7 @@ let config = merge(baseWebpackConfig, {
     rules: [{
       test: /\.(js|jsx)$/,
       use: [
+        'cache-loader',
         'babel-loader',
       ],
       include: [
